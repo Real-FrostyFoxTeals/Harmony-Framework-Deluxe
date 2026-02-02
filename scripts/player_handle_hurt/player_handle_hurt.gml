@@ -134,6 +134,7 @@ function player_handle_hurt()
 	if(y > obj_camera.target_bottom && y > obj_camera.limit_bottom && knockout_type != K_DIE)
 	{
 		knockout_type = K_DIE;
+		state = player_state_knockout
 	}
 	
 	
