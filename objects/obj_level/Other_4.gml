@@ -13,6 +13,10 @@
 		obj_camera.target_x = obj_player.x;
 		obj_camera.target_y = obj_player.y-16;
 		global.stage_timer = global.time_store;
+        
+        if instance_exists(obj_bg_swapper){
+            with (global.current_bg) instance_change(global.background_store, true);
+        }
 	}
 	
 	if !ds_map_exists(global.red_ring_map,stage_name) {

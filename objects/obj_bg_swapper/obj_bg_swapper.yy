@@ -1,0 +1,46 @@
+{
+  "$GMObject":"",
+  "%Name":"obj_bg_swapper",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_bg_swapper",
+  "overriddenProperties":[],
+  "parent":{
+    "name":"Editor",
+    "path":"folders/Objects/Stage Objects/Common Objects/Editor.yy",
+  },
+  "parentObjectId":null,
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"bg_RD","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"bg_RD","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_aaz_bg","path":"objects/obj_aaz_bg/obj_aaz_bg.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_aaz_bg","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"bg_LU","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"bg_LU","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_aaz_bg","path":"objects/obj_aaz_bg/obj_aaz_bg.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_aaz_bg","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"horizontal","filters":[],"listItems":[],"multiselect":false,"name":"horizontal","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_trigger",
+    "path":"sprites/spr_trigger/spr_trigger.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}
