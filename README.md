@@ -1,13 +1,11 @@
-# Harmony Framework Plus
+# Harmony Framework Deluxe
 
 # NOTICE!!
-This build is beta at the moment, you can make a fangame in this all of essential features are done, use it at your own risk. [Current version: 0.9 - Stable]
+This is a work in progress, and is (probably) being actively worked on. There might be bugs and unfinished things, so please be mindful of that.
 
 # What is this?
-  Accurate and stable Sonic framework for GameMaker Studio 2 that's simple to use.
+  A fork of [Harmony Framework](https://github.com/DarkD04/Harmony-Framework/tree/dev_chopp_branch) made by the community that adds a bunch of extra stuff and improvements.
   
 # Documentation and support
-  PDF of function sheet is currently being worked on
-  #
   [Support server for Harmony Framework](https://discord.gg/FH4pHSEv3n). Support will not be given to Sonic.EXE or any creepypasta games!
   
