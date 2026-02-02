@@ -1,13 +1,10 @@
 {
   "FolderOrderSettings":[
-<<<<<<< Updated upstream
     {"name":"EXTRA","order":1,"path":"folders/Objects/EXTRA.yy",},
-=======
     {"name":"Menu Objects","order":1,"path":"folders/Objects/Menu Objects.yy",},
     {"name":"Player Objects","order":2,"path":"folders/Objects/Player Objects.yy",},
     {"name":"Shields","order":3,"path":"folders/Objects/Player Objects/Shields.yy",},
     {"name":"Stage Objects","order":3,"path":"folders/Objects/Stage Objects.yy",},
->>>>>>> Stashed changes
     {"name":"Bonus Stage","order":1,"path":"folders/Objects/Stage Objects/Bonus Stage.yy",},
     {"name":"UNFINISHED TESTS","order":4,"path":"folders/Objects/UNFINISHED TESTS.yy",},
     {"name":"Knuckles","order":1,"path":"folders/Sprites/Player Sprites/Knuckles.yy",},
@@ -61,12 +58,9 @@
     {"name":"sfx_bubble_jump","order":1,"path":"sounds/sfx_bubble_jump/sfx_bubble_jump.yy",},
     {"name":"sfx_bumper","order":1,"path":"sounds/sfx_bumper/sfx_bumper.yy",},
     {"name":"sfx_burst","order":6,"path":"sounds/sfx_burst/sfx_burst.yy",},
-<<<<<<< Updated upstream
     {"name":"sfx_flail_swing","order":7,"path":"sounds/sfx_flail_swing/sfx_flail_swing.yy",},
-=======
     {"name":"sfx_electric_shield_jump","order":6,"path":"sounds/sfx_electric_shield_jump/sfx_electric_shield_jump.yy",},
     {"name":"sfx_fire_dash","order":3,"path":"sounds/sfx_fire_dash/sfx_fire_dash.yy",},
->>>>>>> Stashed changes
     {"name":"sfx_handle_pull","order":5,"path":"sounds/sfx_handle_pull/sfx_handle_pull.yy",},
     {"name":"sfx_hydroplaning","order":2,"path":"sounds/sfx_hydroplaning/sfx_hydroplaning.yy",},
     {"name":"sfx_instashield","order":7,"path":"sounds/sfx_instashield/sfx_instashield.yy",},
@@ -84,18 +78,15 @@
     {"name":"spr_crabmeat_walk","order":4,"path":"sprites/spr_crabmeat_walk/spr_crabmeat_walk.yy",},
     {"name":"spr_crabmeat_walkl_steep","order":5,"path":"sprites/spr_crabmeat_walkl_steep/spr_crabmeat_walkl_steep.yy",},
     {"name":"spr_crabmeat_walkr_steep","order":8,"path":"sprites/spr_crabmeat_walkr_steep/spr_crabmeat_walkr_steep.yy",},
-<<<<<<< Updated upstream
     {"name":"spr_flail_chain","order":1,"path":"sprites/spr_flail_chain/spr_flail_chain.yy",},
     {"name":"spr_flail_pole","order":2,"path":"sprites/spr_flail_pole/spr_flail_pole.yy",},
     {"name":"spr_flail_spikeball","order":3,"path":"sprites/spr_flail_spikeball/spr_flail_spikeball.yy",},
-=======
     {"name":"spr_dust_effect","order":6,"path":"sprites/spr_dust_effect/spr_dust_effect.yy",},
     {"name":"spr_effect_explosion01","order":7,"path":"sprites/spr_effect_explosion01/spr_effect_explosion01.yy",},
     {"name":"spr_effect_instashield","order":10,"path":"sprites/spr_effect_instashield/spr_effect_instashield.yy",},
     {"name":"spr_effect_spindash","order":3,"path":"sprites/spr_effect_spindash/spr_effect_spindash.yy",},
     {"name":"spr_effects_dropdash_dust","order":2,"path":"sprites/spr_effects_dropdash_dust/spr_effects_dropdash_dust.yy",},
     {"name":"spr_effects_dust","order":5,"path":"sprites/spr_effects_dust/spr_effects_dust.yy",},
->>>>>>> Stashed changes
     {"name":"spr_gumball_machine","order":2,"path":"sprites/spr_gumball_machine/spr_gumball_machine.yy",},
     {"name":"spr_gumball","order":5,"path":"sprites/spr_gumball/spr_gumball.yy",},
     {"name":"spr_hydroplaning","order":1,"path":"sprites/spr_hydroplaning/spr_hydroplaning.yy",},
