@@ -26,7 +26,7 @@
 	
 	//Draw rectangle for the background
 	draw_set_color(bg_color);
-	draw_rectangle(center_x - 153, center_y - 28 - 44, center_x + 152, center_y + 27 - 44, false);
+	draw_rectangle(center_x - 153, center_y - 28 - 44, center_x + 152, center_y + 34 - 44, false);
 	draw_rectangle(center_x - 153, center_y - 28 + 28, center_x + 152, center_y + 27 + 44, false);
 	draw_set_color(text_color);
 	
@@ -38,7 +38,7 @@
 	draw_set_color(unselected_text_color);
 	draw_text(center_x, center_y - 48, window_get_caption());
 	draw_text(center_x, center_y - 40, GM_version);
-	draw_text(center_x, center_y - 32, os_get_string() + " - Runtime: " + GM_runtime_version /*+ " | Build Time: " + date_time_string(GM_build_date)*/);
+	draw_text(center_x, center_y - 32, os_get_string() + " - Runtime: " + GM_runtime_version + "\nBuild Time: " + date_time_string(GM_build_date));
 	draw_set_color(text_color);
 	
 	//Draw dev menu's text
@@ -55,21 +55,21 @@
 		
 		//Draw the character select
 		case dev_menu_state.character_select:
-			draw_set_halign(fa_left);
+			draw_set_halign(fa_center);
 			for (var i = character_select_offset; i < min(character_id, 7) + character_select_offset; ++i) 
 			{
 				draw_set_color(character_select == i ? text_color : unselected_text_color);
-				draw_text(center_x - 64, center_y + 8 + (8 * (i - character_select_offset)), char_name[i]);
+				draw_text(center_x, center_y + 8 + (8 * (i - character_select_offset)), char_name[i]);
 			}
 		break;
 		
 		//Draw category select
 		case dev_menu_state.category_select:
-			draw_set_halign(fa_left);
+			draw_set_halign(fa_center);
 			for (var i = category_offset; i < min(category_id, 7) + category_offset; ++i) 
 			{
 				draw_set_color(category_select == i ? text_color : unselected_text_color);
-				draw_text(center_x - 80, center_y + 8 + (8 * (i - category_offset)), category_name[i]);
+				draw_text(center_x, center_y + 8 + (8 * (i - category_offset)), category_name[i]);
 			}
 		break;
 		
@@ -90,13 +90,13 @@
 				//Draw the name of the option
 				draw_set_color(option_select == i ? text_color : unselected_text_color);
 				draw_set_halign(fa_left);
-				draw_text(center_x - 80, center_y + 8 + (8 * (i - option_offset)), option_name[i]);
+				draw_text(center_x - 110, center_y + 8 + (8 * (i - option_offset)), option_name[i]);
 				
 				//Draw the number of the option
 				draw_set_halign(fa_right);
 				var number = variable_instance_get(global, option_variable[i]);
 				var flag = number == 1 ? "True" : "False";
-				draw_text(center_x + 80, center_y + 8 + (8 * (i - option_offset)), option_flag[i] ? flag : string(number));
+				draw_text(center_x + 110, center_y + 8 + (8 * (i - option_offset)), option_flag[i] ? flag : string(number));
 			}
 		break;
 	}
@@ -106,7 +106,7 @@
 	draw_set_halign(fa_left)
 
 	//Reset the surface target
-	surface_reset_target()
+	surface_reset_target();
 	
 	//Draw the dev menu
 	draw_surface(surface, cx, cy);	
