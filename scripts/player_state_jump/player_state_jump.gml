@@ -32,6 +32,17 @@ function player_state_jump(){
 				}
 			}
 		}
+		// execute insta shield
+		else{
+			// set values
+			invincible_timer = 14;
+			instashield_frames = 14;  // timer for how long it stays active
+			instashield_used = true;  // prevents multiple uses
+				
+			// effects
+			instance_create_depth(x, y, 0, obj_instashield) // spawn sprite effect
+			play_sound(sfx_instashield);
+		}
 	}
 	
 	//super transformation

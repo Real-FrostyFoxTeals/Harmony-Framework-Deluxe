@@ -2,6 +2,7 @@ function player_misc(){
 	//Subtract timers
 	control_lock = max(control_lock-1, 0);
 	ceiling_lock = max(ceiling_lock-1, 0);
+	instashield_frames = max(instashield_frames-1, 0);
 	
 	//Handle player shields
 	if(shield != S_NONE)

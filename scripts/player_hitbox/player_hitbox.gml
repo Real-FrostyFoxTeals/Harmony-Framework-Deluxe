@@ -45,5 +45,14 @@ function player_hitbox(){
 		hitbox_top_offset = -hitbox_normal[global.character][1];
 	}
 	
+	// Insta-shield hitbox
+	if(instashield_frames)
+	{
+		hitbox_top_offset = 16
+		hitbox_bottom_offset = 16;
+		hitbox_left_offset = 16;
+		hitbox_right_offset = 16;
+	}
+	
 
 }
