@@ -1,10 +1,12 @@
 {
   "FolderOrderSettings":[
+    {"name":"EXTRA","order":1,"path":"folders/Objects/EXTRA.yy",},
     {"name":"Bonus Stage","order":1,"path":"folders/Objects/Stage Objects/Bonus Stage.yy",},
     {"name":"Bonus Stage","order":3,"path":"folders/Sprites/Stage Sprites/Bonus Stage.yy",},
     {"name":"Bridge Zone","order":1,"path":"folders/Sprites/Stage Sprites/Bridge Zone.yy",},
     {"name":"Common Sprites","order":2,"path":"folders/Sprites/Stage Sprites/Common Sprites.yy",},
     {"name":"Checkpoints","order":1,"path":"folders/Sprites/Stage Sprites/Common Sprites/Checkpoints.yy",},
+    {"name":"EXTRA","order":4,"path":"folders/Sprites/Stage Sprites/EXTRA.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"curve_titlecard_bonus","order":3,"path":"animcurves/curve_titlecard_bonus/curve_titlecard_bonus.yy",},
@@ -29,6 +31,7 @@
     {"name":"obj_titlecard_bonus","order":1,"path":"objects/obj_titlecard_bonus/obj_titlecard_bonus.yy",},
     {"name":"par_gumball_solid","order":6,"path":"objects/par_gumball_solid/par_gumball_solid.yy",},
     {"name":"rm_bonus","order":1,"path":"rooms/rm_bonus/rm_bonus.yy",},
+    {"name":"check_region","order":1,"path":"scripts/check_region/check_region.yy",},
     {"name":"dev_util","order":1,"path":"scripts/dev_util/dev_util.yy",},
     {"name":"has_all_emeralds","order":1,"path":"scripts/has_all_emeralds/has_all_emeralds.yy",},
     {"name":"player_state_transform","order":1,"path":"scripts/player_state_transform/player_state_transform.yy",},
@@ -36,6 +39,7 @@
     {"name":"j_super","order":1,"path":"sounds/j_super/j_super.yy",},
     {"name":"sfx_bumper","order":1,"path":"sounds/sfx_bumper/sfx_bumper.yy",},
     {"name":"sfx_burst","order":6,"path":"sounds/sfx_burst/sfx_burst.yy",},
+    {"name":"sfx_flail_swing","order":7,"path":"sounds/sfx_flail_swing/sfx_flail_swing.yy",},
     {"name":"sfx_handle_pull","order":5,"path":"sounds/sfx_handle_pull/sfx_handle_pull.yy",},
     {"name":"sfx_hydroplaning","order":2,"path":"sounds/sfx_hydroplaning/sfx_hydroplaning.yy",},
     {"name":"sfx_transform","order":1,"path":"sounds/sfx_transform/sfx_transform.yy",},
@@ -49,6 +53,9 @@
     {"name":"spr_crabmeat_walk","order":4,"path":"sprites/spr_crabmeat_walk/spr_crabmeat_walk.yy",},
     {"name":"spr_crabmeat_walkl_steep","order":5,"path":"sprites/spr_crabmeat_walkl_steep/spr_crabmeat_walkl_steep.yy",},
     {"name":"spr_crabmeat_walkr_steep","order":8,"path":"sprites/spr_crabmeat_walkr_steep/spr_crabmeat_walkr_steep.yy",},
+    {"name":"spr_flail_chain","order":1,"path":"sprites/spr_flail_chain/spr_flail_chain.yy",},
+    {"name":"spr_flail_pole","order":2,"path":"sprites/spr_flail_pole/spr_flail_pole.yy",},
+    {"name":"spr_flail_spikeball","order":3,"path":"sprites/spr_flail_spikeball/spr_flail_spikeball.yy",},
     {"name":"spr_gumball_machine","order":2,"path":"sprites/spr_gumball_machine/spr_gumball_machine.yy",},
     {"name":"spr_gumball","order":5,"path":"sprites/spr_gumball/spr_gumball.yy",},
     {"name":"spr_hydroplaning","order":1,"path":"sprites/spr_hydroplaning/spr_hydroplaning.yy",},
