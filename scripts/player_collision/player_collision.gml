@@ -43,6 +43,7 @@ function player_collision(){
 			landed = true;
 			ground_speed = x_speed;
 			reach_range = 48;
+			instashield_used = false;
 				
 			//Call angle detection
 			player_angle_detection();
