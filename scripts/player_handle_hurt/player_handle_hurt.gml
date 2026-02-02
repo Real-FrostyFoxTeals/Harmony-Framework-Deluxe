@@ -7,7 +7,7 @@ function player_handle_hurt()
 	if(state != player_state_knockout)
 	{
 		//Reset knockout type when you're invicible
-		if(invincible || invincible_timer > 0)
+		if(invincible || invincible_timer > 0 || instashield_frames)
 		{
 			if (knockout_type == K_HURT) {
 				knockout_type = 0;	

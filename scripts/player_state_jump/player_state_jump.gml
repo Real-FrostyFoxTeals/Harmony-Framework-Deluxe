@@ -33,8 +33,9 @@ function player_state_jump(){
 			}
 		}
 		// execute insta shield
-		else if (!instashield_used){
+		else if (!instashield_used && global.use_instashield){
 			// set values
+			attacking = true;
 			instashield_frames = 14;  // timer for how long it stays active
 			instashield_used = true;  // prevents multiple uses
 				

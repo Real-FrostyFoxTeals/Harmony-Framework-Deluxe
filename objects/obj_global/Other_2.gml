@@ -88,6 +88,7 @@
 	global.use_dropdash = true;				//Flag that allows dropdash ability
 	global.use_airroll = false;				//Flag that allows rolling while air-borne
 	global.use_spindash = true;				//Flag taht allows player to use the spindash
+	global.use_instashield = true;
 	global.camera_pan_type = 0;				//Variable that changes how camera panning works. 0 = No panning, 1 = Sonic CD panning[currently inaccurate], 2 = S1D/XG styled camera panning 
 	global.chaotix_dust_effect = false;		//Flag that disables classic spindash/skid dust effect
 	global.camera_type = 1;					//Vertical camera scrolling type, 0 = Megadrive, 1 = Mania
