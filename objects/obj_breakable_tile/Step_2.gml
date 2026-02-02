@@ -6,7 +6,7 @@
 	{
 		case 0:
 		//Change collision flag
-		if(obj_player.state = player_state_roll && abs(obj_player.ground_speed) >= 1 && obj_player.ground || obj_player.state = player_state_spindash || obj_player.character == CHAR_KNUX)
+		if(obj_player.state = player_state_roll && abs(obj_player.ground_speed) >= 1 && obj_player.ground || obj_player.state = player_state_spindash || obj_player.character == CHAR_KNUX || obj_player.super)
 		{
 		    if(obj_player.character == CHAR_KNUX && knuckles_wall)
 			{

@@ -47,7 +47,7 @@ function player_handle_physics(){
 	}
 	
 	//Multiplier for speed shoes
-	if(speed_shoes_flag) 
+	if(speed_shoes_flag && !super) 
 	{
         top_speed *= 2.0;
         x_accel *= 2.0;
