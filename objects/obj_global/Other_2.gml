@@ -27,6 +27,7 @@
 	global.window_width  = 426;				//Window's horizontal size
 	global.window_height = 240;				//Window's vertical size
 	global.window_size   = 2;				//Window size multiplier
+	global.window_size_limit = (round(display_get_width() / global.window_width) - 1); //Limit window size to display resolution
 	
 	//keyboard inputs
 	global.up = vk_up;						
