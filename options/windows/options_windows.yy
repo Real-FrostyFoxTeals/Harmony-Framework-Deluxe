@@ -1,6 +1,11 @@
 {
   "$GMWindowsOptions":"v1",
   "%Name":"Windows",
+  "ConfigValues":{
+    "Dev":{
+      "option_windows_display_name":"Harmony Framework Deluxe",
+    },
+  },
   "name":"Windows",
   "option_windows_allow_fullscreen_switching":false,
   "option_windows_borderless":false,
