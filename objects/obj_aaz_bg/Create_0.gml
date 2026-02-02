@@ -1,6 +1,4 @@
-/// @description Add background
-	
-	//Inherit the parent event
+//Inherit the parent event
 	event_inherited();
 	
 	//Vertical scroll factor

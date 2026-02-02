@@ -46,6 +46,8 @@
 	global.checkpoint = ds_list_create();	//The list of active checkpoints
 	global.checkpoint_id = noone;			//Checkpoint that is currently active
 	global.time_store = 0;					//Store value for timer when checkpoint gets active
+    global.current_bg = noone;
+    global.background_store = noone;		//Store value for the background at the time of getting the checkpoint
 	
 	enum BONUSSTAGE {
 		OUTSIDE,

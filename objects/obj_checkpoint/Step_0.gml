@@ -20,6 +20,9 @@
 		//Store checkpoint timer
 		global.time_store = global.stage_timer;
 		
+        //Store checkpoint background
+        with (global.current_bg) global.background_store = object_index;
+		
 		//Store checkpoint ID so all checkpoints can be active during the start
 		ds_list_add(global.checkpoint, id);
 		
