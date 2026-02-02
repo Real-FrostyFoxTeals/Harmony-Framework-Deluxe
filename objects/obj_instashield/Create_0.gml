@@ -1,4 +1,4 @@
 /// @description Startup
 collision_flag = false;
-image_xscale = sign(Player.image_xscale);
+image_xscale = sign(obj_player.image_xscale);
 image_speed = 1;

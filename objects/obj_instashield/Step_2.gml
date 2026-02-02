@@ -1,5 +1,5 @@
 /// @description Script
-	x = floor(Player.x);
-	y = floor(Player.y);
-	depth = Player.depth - 10;
-	if(!Player.instashield_frames or image_index == 5) instance_destroy();
+	x = floor(obj_player.x);
+	y = floor(obj_player.y);
+	depth = obj_player.depth - 10;
+	if(!obj_player.instashield_frames or image_index == 5) instance_destroy();
