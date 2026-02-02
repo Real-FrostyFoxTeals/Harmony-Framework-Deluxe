@@ -2,8 +2,11 @@ function player_water(){
 	//Stop executing if theres no water
 	if(!instance_exists(obj_water) || !collision_allow) exit;
 	
+    //Water objects
+    var water = instance_place(x, y, obj_water), nearest_water = instance_nearest(x, y, obj_water);
+    
 	//Entering water
-	if(y >= obj_water.y)
+	if(water)
 	{
 		//Player hitting the water
 		if(!underwater)
@@ -13,7 +16,7 @@ function player_water(){
 			y_speed *= 0.25;
 			
 			//Create effects
-			create_effect(x, obj_water.y, spr_water_splash, 0.35);
+			create_effect(x, water.y, spr_water_splash, 0.35);
 			
 			//Play sound
 			play_sound(sfx_water_splash);
@@ -22,9 +25,7 @@ function player_water(){
 		//Trigger the flag
 		underwater = true;
 	}
-	
-	//Exiting water
-	if(y < obj_water.y)
+    else
 	{
 		//Player hitting the water
 		if(underwater)
@@ -33,7 +34,7 @@ function player_water(){
 			y_speed *= 1.25;
 			
 			//Create effects
-			create_effect(x, obj_water.y, spr_water_splash, 0.35);
+			create_effect(x, nearest_water.y, spr_water_splash, 0.35);
 			
 			//Play sound
 			play_sound(sfx_water_splash);

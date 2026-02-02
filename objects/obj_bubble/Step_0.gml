@@ -1,6 +1,8 @@
 /// @description Script
 	 sprite_index = asset_get_index("spr_bubble_" + string(type+1)); 
 	
+    var water = (place_meeting(x, y, obj_water) ? instance_place(x, y, obj_water) : instance_nearest(x, y, obj_water));
+    
 	//Movement
 	y -= 0.5;
 	x = xstart + 3*dsin(angle)
@@ -9,7 +11,7 @@
 	angle = (angle + 2) mod 360;
 	
 	//Destroy outside of window or above water horizon
-	if(!on_screen() || bbox_top < obj_water.y) instance_destroy();
+	if(!on_screen() || bbox_top < water.y) instance_destroy();
 	
 	//Utilize animation system
 	if(image_index >= image_number-1)
