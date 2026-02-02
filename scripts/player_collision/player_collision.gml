@@ -180,6 +180,17 @@ function player_collision(){
 			}
 		}
 	}
+    else
+    {   
+        //Ceiling solid collision
+		if(mode = 0)
+		{
+			if(line_check(hitbox_w, -hitbox_h) && line_check(-hitbox_w, -hitbox_h) && line_check(hitbox_w, hitbox_h) && line_check(-hitbox_w, hitbox_h))
+			{
+                knockout_type = K_DIE;
+			}
+		}
+    }
 		
 	//Reset angle when airborn
 	if(!ground)

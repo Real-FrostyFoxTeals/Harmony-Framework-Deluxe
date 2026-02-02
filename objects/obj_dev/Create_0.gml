@@ -17,3 +17,6 @@
 	graded_surf = surface_create(WINDOW_WIDTH * 2, WINDOW_HEIGHT * 2);
 	
 	depth = -1000;
+    
+    draw = [[]];
+    draw_ind = 0;

@@ -29,6 +29,7 @@
     {"name":"obj_titlecard_bonus","order":1,"path":"objects/obj_titlecard_bonus/obj_titlecard_bonus.yy",},
     {"name":"par_gumball_solid","order":6,"path":"objects/par_gumball_solid/par_gumball_solid.yy",},
     {"name":"rm_bonus","order":1,"path":"rooms/rm_bonus/rm_bonus.yy",},
+    {"name":"dev_util","order":1,"path":"scripts/dev_util/dev_util.yy",},
     {"name":"has_all_emeralds","order":1,"path":"scripts/has_all_emeralds/has_all_emeralds.yy",},
     {"name":"player_state_transform","order":1,"path":"scripts/player_state_transform/player_state_transform.yy",},
     {"name":"bgm_bonus","order":1,"path":"sounds/bgm_bonus/bgm_bonus.yy",},

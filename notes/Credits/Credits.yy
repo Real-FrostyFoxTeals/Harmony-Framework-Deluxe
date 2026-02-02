@@ -2,6 +2,7 @@
   "$GMNotes":"v1",
   "%Name":"Credits",
   "name":"Credits",
+  "openedOnFirstLoad":true,
   "parent":{
     "name":"Notes",
     "path":"folders/Notes.yy",

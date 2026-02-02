@@ -1,8 +1,32 @@
 /// @description Draw debug
+/// @description Draw debug
 	//Draw hitboxes
 	if(show_hitbox)
 	{
-		with(all)
+        for(var i = 0; i < draw_ind; i++)
+        {
+            with(draw[i][0])
+            {
+                switch(other.draw[i][1])
+                {
+                    case "point":
+                        draw_sprite_ext(spr_point, 0, other.draw[i][2], other.draw[i][3], 1, 1, 0, other.draw[i][4], 1);
+                    break;
+                    
+                    case "line":
+                        draw_line_color(other.draw[i][2], other.draw[i][3], other.draw[i][4], other.draw[i][5], other.draw[i][6], other.draw[i][6]);
+                    break;
+                    
+                    case "rectangle":
+                        draw_set_alpha(other.draw[i][7]);
+                        draw_rectangle_color(other.draw[i][2], other.draw[i][3], other.draw[i][4], other.draw[i][5], other.draw[i][6], other.draw[i][6], other.draw[i][6], other.draw[i][6], false);
+                        draw_set_alpha(1);
+                    break;
+                }
+            }
+        }
+        
+        with(all)
 		{
 			if(object_index != obj_player && object_index != obj_effect && object_index != obj_dust_effect)	
 			{
@@ -15,6 +39,9 @@
 			}
 		}
 	}
+    
+    //Reset for overwritting
+    draw_ind = 0;
 	
 	//Create surface
 	if(!surface_exists(surf)) surf = surface_create(global.window_width, global.window_height);

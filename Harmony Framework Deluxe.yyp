@@ -295,6 +295,7 @@
     {"id":{"name":"create_ringloss","path":"scripts/create_ringloss/create_ringloss.yy",},},
     {"id":{"name":"create_score","path":"scripts/create_score/create_score.yy",},},
     {"id":{"name":"dev_menu_util","path":"scripts/dev_menu_util/dev_menu_util.yy",},},
+    {"id":{"name":"dev_util","path":"scripts/dev_util/dev_util.yy",},},
     {"id":{"name":"draw_background_layer","path":"scripts/draw_background_layer/draw_background_layer.yy",},},
     {"id":{"name":"draw_self_floor","path":"scripts/draw_self_floor/draw_self_floor.yy",},},
     {"id":{"name":"draw_sprite_tiled_horizontal","path":"scripts/draw_sprite_tiled_horizontal/draw_sprite_tiled_horizontal.yy",},},
