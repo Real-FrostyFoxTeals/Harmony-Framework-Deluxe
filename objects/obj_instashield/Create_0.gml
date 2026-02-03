@@ -1,4 +1,7 @@
 /// @description Startup
-collision_flag = false;
-image_xscale = sign(obj_player.image_xscale);
-image_speed = 1;
+    image_xscale = sign(obj_player.image_xscale);
+    image_speed = 1;
+    depth = obj_player.depth - 10;
+
+    frames = 14;                         // timer for how long it stays active
+	obj_player.instashield_used = true;  // prevents multiple uses

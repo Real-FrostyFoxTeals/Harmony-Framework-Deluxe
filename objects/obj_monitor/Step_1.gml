@@ -29,7 +29,7 @@
 	if(!destroyed)
 	{
 		//Bump the monitor
-		if(player_collide_object(C_TOP) && sign(image_yscale) == 1)
+		if((player_collide_object(C_TOP) || place_meeting(x, y, obj_instashield)) && sign(image_yscale) == 1)
 		{
 			collision_flag = false;
 			ground = false;

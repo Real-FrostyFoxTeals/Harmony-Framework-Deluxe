@@ -92,7 +92,6 @@
 	
 	//Character specifics:
 	instashield_used = false;           //Boolean indicating whether the player has already used instashield
-	instashield_frames = 0;				//Timer used for instashield
 	tails_timer = 480;					//Timer used for tails flight
 	knuckles_angle = 90;				//Knuckles' gliding angle
 	glide_speed = 2.5;					//Knuckles' glide speed
