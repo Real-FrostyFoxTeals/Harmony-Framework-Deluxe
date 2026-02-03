@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"check_region",
+  "%Name":"soundemitter_util",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"check_region",
+  "name":"soundemitter_util",
   "parent":{
-    "name":"Misc. Scripts",
-    "path":"folders/Scripts/Engine Scripts/Misc. Scripts.yy",
+    "name":"Utility Scripts",
+    "path":"folders/Scripts/Utility Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

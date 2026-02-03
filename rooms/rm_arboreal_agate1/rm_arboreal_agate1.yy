@@ -997,7 +997,7 @@
               0,-6,-2147483648,1,0,-484,-2147483648,1,1,-8,-2147483648,1,1,-155,-2147483648,1,1,-4,0,-4,-2147483648,
               1,1,-3,-2147483648,1,0,-6,-2147483648,1,1,-16,-2147483648,-4,0,-2,-2147483648,-7,0,-31,-2147483648,-13,
               0,-45,-2147483648,
-            ],"TileDataFormat":1,},"tilesetId":{"name":"tile_collision","path":"tilesets/tile_collision/tile_collision.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+            ],"TileDataFormat":1,},"tilesetId":{"name":"tile_collision","path":"tilesets/tile_collision/tile_collision.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
         {"$GMRTileLayer":"","%Name":"CollisionSemi","depth":700,"effectEnabled":true,"effectType":"_filter_tintfilter","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionSemi","properties":[
             {"name":"g_TintCol","type":1,"value":"#FF00FFFF",},
           ],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":100,"SerialiseWidth":750,"TileCompressedData":[

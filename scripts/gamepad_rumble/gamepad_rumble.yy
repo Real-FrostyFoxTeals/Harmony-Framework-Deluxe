@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"gamepad_rumble",
   "parent":{
-    "name":"System Scripts",
-    "path":"folders/Scripts/Engine Scripts/System Scripts.yy",
+    "name":"Misc. Scripts",
+    "path":"folders/Scripts/Engine Scripts/Misc. Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

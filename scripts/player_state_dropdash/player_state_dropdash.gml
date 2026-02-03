@@ -47,7 +47,8 @@ function player_state_dropdash(){
 		if (!super){
 			play_sound(sfx_release);
 		} else {
-			play_sound(sfx_peelout_release);	
+			play_sound(sfx_peelout_release);
+			obj_camera.camera_shake = 5.0;
 		}
 		
 		//Camera lag
