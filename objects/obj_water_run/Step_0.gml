@@ -1,6 +1,6 @@
 /// @description Script
     
-    //If it's for the pool, only work when you're in between the object's boundaries
+    //If it's for the pool, only work when you're in-between the object's boundaries
     if (water.pool && !(obj_player.x >= water.bbox_left && obj_player.x <= water.bbox_right)) exit;
     
     x = floor(obj_player.x - 32);

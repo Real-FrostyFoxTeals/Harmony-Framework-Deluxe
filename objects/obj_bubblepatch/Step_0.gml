@@ -41,7 +41,15 @@
 		if (time == time_until) {
 			var big_chance = irandom_range(0,3)
 			var bubble = instance_create_depth(x + irandom_range(-8,7), y-4, depth-1, obj_bubble);
-			bubble.water = instance_place(x, y, obj_water);
+            
+            bubble.water = instance_place(x, y, obj_water);
+            //Hard setting the water object to the main one if it's in proximity of the Player
+            with (obj_water){
+                if (!pool && obj_player.y >= y-32){
+                    bubble.water = self;
+                    break;
+                }
+            }
             
 			if (cycle mod (emitting_type + 1) == 0){
 				if (big_chance == 3 && !spawned_big){
