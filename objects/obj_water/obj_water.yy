@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_trigger",
-    "path":"sprites/spr_trigger/spr_trigger.yy",
+    "name":"spr_water",
+    "path":"sprites/spr_water/spr_water.yy",
   },
   "spriteMaskId":null,
   "visible":true,

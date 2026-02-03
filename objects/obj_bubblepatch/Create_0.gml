@@ -10,3 +10,6 @@
 	cycle_set_index = 0
 	spawned_big = false
 	is_emitting = false
+
+    if (place_meeting(x, y, obj_water_pool)) bubble_obj = obj_pool_bubble;
+    else bubble_obj = obj_bubble;

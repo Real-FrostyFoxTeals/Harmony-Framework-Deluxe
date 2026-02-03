@@ -10,7 +10,7 @@
 	}
 	
 	//Destroy the enemy
-	if(player_collide_object(C_MAIN)||obj_player.instashield_frames && place_meeting(x, y, obj_instashield))
+	if(player_collide_object(C_MAIN) || place_meeting(x, y, obj_instashield))
 	{
 		var fly_angle = 90 - point_direction(obj_player.x, obj_player.y,x,y) 
 		var fly_cond = (obj_player.state == player_state_tailsfly && abs(fly_angle) < 45)
