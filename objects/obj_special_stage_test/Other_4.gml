@@ -1,0 +1,1 @@
+if (active) endstage = true;
