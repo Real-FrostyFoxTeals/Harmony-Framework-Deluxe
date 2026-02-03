@@ -193,7 +193,6 @@
     {"name":"spr_super_sparkle_2","order":9,"path":"sprites/spr_super_sparkle_2/spr_super_sparkle_2.yy",},
     {"name":"spr_test","order":11,"path":"sprites/spr_test/spr_test.yy",},
     {"name":"spr_title_card_piece","order":8,"path":"sprites/spr_title_card_piece/spr_title_card_piece.yy",},
-    {"name":"spr_trigger","order":4,"path":"sprites/spr_trigger/spr_trigger.yy",},
     {"name":"spr_wheeltank","order":6,"path":"sprites/spr_wheeltank/spr_wheeltank.yy",},
     {"name":"tex_pal_superknux","order":3,"path":"sprites/tex_pal_superknux/tex_pal_superknux.yy",},
     {"name":"tex_pal_supersonic","order":1,"path":"sprites/tex_pal_supersonic/tex_pal_supersonic.yy",},
