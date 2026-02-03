@@ -3,7 +3,7 @@
 	process_object_list = ds_list_create();
 	
 	global.store_object_state = ds_list_create();
-	global.previous_room = rm_splash
+	global.previous_room = rm_splash;
 	global.store_player_state = {
 		shield : S_NONE,
 		combinering : 0,
@@ -18,7 +18,7 @@
 	
 	//Game variables
 	global.process_objects = true;			//Flag that allows step event of every object to be processed
-	global.dev_mode = DEVMODE;					//Flag for developer mode, which allows you to use dev commands, don't forget to turn this off when releasing the game
+	global.dev_mode = DEVMODE;				//Flag for developer mode, which allows you to use dev commands, don't forget to turn this off when releasing the game
 	
 	//Character globals
 	global.character = CHAR_SONIC;			//Global value for the character
@@ -26,7 +26,7 @@
 	//Screen values
 	global.window_width  = 426;				//Window's horizontal size
 	global.window_height = 240;				//Window's vertical size
-	global.window_size   = 2;				//Window size multiplier
+	global.window_size   = 3;				//Window size multiplier
 	global.window_size_limit = (round(display_get_width() / global.window_width) - 1); //Limit window size to display resolution
 	
 	//keyboard inputs
@@ -68,9 +68,9 @@
 	global.title_card = true;				//Flag that allows title card to be triggered, used in dev
 	global.emeralds = [true, true, true, true, true, true, true];				//List of active emeralds
 	global.col_tile = ["CollisionMain", "CollisionSemi", "CollisionA", "CollisionB"];	//List of collision layers
-	global.extra_life_jingle = true;		//flag that plays a jingle that cuts out the music when true, plays a sound effect if false
+	global.extra_life_jingle = true;		//Flag that plays a jingle that cuts out the music when true, plays a sound effect if false
 	
-	#macro SOUND_EXTRA_LIFE if (global.extra_life_jingle){ play_sound(j_extra_life)} else {play_sound(sfx_extralife)}
+	#macro SOUND_EXTRA_LIFE if(global.extra_life_jingle) { play_sound(j_extra_life) } else { play_sound(sfx_extralife) }
 	
 	//Act transition variables
 	global.monitor_store = [];				//List of monitor instances that were bumped with sign
@@ -110,9 +110,8 @@
 	instance_create_depth(0, 0, 0, obj_music);
 	instance_create_depth(0, 0, -100, obj_fade);
 	
-	//Controlers for dev mode
-	if(global.dev_mode) 
-	{
+	//Controllers for dev mode
+	if(global.dev_mode) {
 		instance_create_depth(0, 0, 0, obj_dev);
 		instance_create_depth(0, 0, 0, obj_shell);
 	}
@@ -129,7 +128,6 @@
 	#macro FRAME_TIMER global.object_timer
 	
 	global.red_ring_map = ds_map_create();
-	
 	
 	//Ending event:
 	room_goto_next();
