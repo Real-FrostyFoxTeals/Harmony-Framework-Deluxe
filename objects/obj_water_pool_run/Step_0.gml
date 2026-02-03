@@ -1,8 +1,6 @@
 /// @description Script
-    var water = (place_meeting(x, y, water_object) ? instance_place(x, y, water_object) : instance_nearest(x, y, water_object));
-    
 	x = floor(obj_player.x - 32);
-	y = water.y + (1 * abs(1-obj_player.on_object));
+	y = water_object.y + (1 * abs(1-obj_player.on_object));
 	
 	//Change collision size
 	image_xscale = 4;
@@ -12,7 +10,7 @@
 	collision_flag = false;
 	
 	//Change flag
-	if(obj_player.y < y && obj_player.x >= water.x && obj_player.x < water.x + water.sprite_width && abs(obj_player.ground_speed) >= 4 && obj_player.ground && obj_player.y_speed >= 0 && obj_player.y_speed <= 1 && obj_player.mode = 0)
+	if(obj_player.y < y && obj_player.x >= water_object.x && obj_player.x < water_object.x + water_object.sprite_width && abs(obj_player.ground_speed) >= 4 && obj_player.ground && obj_player.y_speed >= 0 && obj_player.y_speed <= 1 && obj_player.mode = 0)
 		collision_flag = true;
 	
 	if (global.water_running_effect == 1) {
