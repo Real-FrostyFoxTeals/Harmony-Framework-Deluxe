@@ -27,15 +27,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"ocean","filters":[],"listItems":[],"multiselect":false,"name":"ocean","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_trigger_blue",
-    "path":"sprites/spr_trigger_blue/spr_trigger_blue.yy",
+    "name":"spr_water_pool",
+    "path":"sprites/spr_water_pool/spr_water_pool.yy",
   },
   "spriteMaskId":null,
   "visible":true,

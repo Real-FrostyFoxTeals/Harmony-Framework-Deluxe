@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_trigger_red",
-    "path":"sprites/spr_trigger_red/spr_trigger_red.yy",
+    "name":"spr_bg_swapper",
+    "path":"sprites/spr_bg_swapper/spr_bg_swapper.yy",
   },
   "spriteMaskId":null,
   "visible":true,
