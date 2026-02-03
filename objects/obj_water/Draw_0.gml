@@ -6,14 +6,14 @@
 	cy = camera_get_view_y(view_camera[view_current])
 	sw = global.window_width;
 	sh = global.window_height;
-	
-	//Set x position to the left side of the screen
-	x = cx;
-	
+
 	//Draw basic rectangle with blendmode
 	draw_set_color($5b301e);
 	gpu_set_blendmode(bm_subtract);
-	draw_rectangle(cx, max(y, cy), cx+sw+64, max(y, cy)+sh, false);
+
+	if (!pool)  draw_rectangle(cx, max(y+1, cy), cx+sw+64, max(y+1, cy)+sh, false);
+    else        draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
+    
 	gpu_set_blendmode(bm_normal);
 	draw_set_color(c_white);
 	
@@ -42,5 +42,7 @@
 	gpu_set_blendenable(true);
 	*/
 	//Draw the water horizon
-	for(var i = 0; i < screen_width+2; i++)
-		draw_sprite(sprite_index, image_index, (round(cx/spr_width)*spr_width)+spr_width*i, y);
+    image_index += 0.7;
+
+	if (!pool) draw_sprite_ext(spr_water, image_index, x, y, sw+64, 1, 0, c_white, 1);
+    draw_sprite_ext(spr_water, image_index, x, y, sprite_width/64, 1, 0, c_white, 1);

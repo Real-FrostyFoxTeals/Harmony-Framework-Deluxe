@@ -4,6 +4,7 @@
 	//Visual functions
 	function aaz2_water_dist_start(){
 		if(!instance_exists(obj_water)) exit;
+        
 		var c = view_camera[0];
               
 	    if (!surface_exists(global.pal_surf)) 
@@ -20,6 +21,11 @@
 	function aaz2_water_dist_end(){
 		if(!instance_exists(obj_water)) exit;
 		
+        var water;
+        with (obj_water){
+            if (!pool){ water = self; break; }
+        }
+        
 		var c = view_camera[0];
 	    var cx = camera_get_view_x(c);
 	    var cy = camera_get_view_y(c);
@@ -35,7 +41,7 @@
 
 		surface_deform(WINDOW_WIDTH,WINDOW_HEIGHT, distort_data, cy + FRAME_TIMER / 3)
 	   
-		draw_surface_part(global.pal_surf, -8, obj_water.y-cy, WINDOW_WIDTH + 32, cy, cx-8, obj_water.y);
+		draw_surface_part(global.pal_surf, -8, water.y-cy, WINDOW_WIDTH + 32, cy, cx-8, water.y);
 	    shader_reset();
 		
 		draw_surface_part(global.pal_surf, 0, 0, WINDOW_WIDTH + 32, obj_water.y-cy,cx, cy);

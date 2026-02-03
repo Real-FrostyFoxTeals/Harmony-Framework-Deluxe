@@ -102,7 +102,7 @@
 	global.chaotix_dust_effect = false;		//Flag that disables classic spindash/skid dust effect
 	global.camera_type = 1;					//Vertical camera scrolling type, 0 = Megadrive, 1 = Mania
 	global.knux_camera_smooth = false;		//Flag for using smooth ledge climb camera movement
-	global.water_running_effect = 0;		//0 for the hydrocity effect, 1 for repeating splashes
+	global.water_running_effect = 1;		//0 for the hydrocity effect, 1 for repeating splashes
 	global.no_skid_state = true;			//makes skidding work closer to the genesis games, instead of a seperate state
 	
 	//Font setup:

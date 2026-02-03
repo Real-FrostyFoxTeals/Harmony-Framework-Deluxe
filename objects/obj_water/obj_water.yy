@@ -26,13 +26,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"pool","filters":[],"listItems":[],"multiselect":false,"name":"pool","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_water",
-    "path":"sprites/spr_water/spr_water.yy",
+    "name":"spr_water_pool",
+    "path":"sprites/spr_water_pool/spr_water_pool.yy",
   },
   "spriteMaskId":null,
   "visible":true,
