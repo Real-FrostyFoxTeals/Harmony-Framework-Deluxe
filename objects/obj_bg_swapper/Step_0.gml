@@ -1,7 +1,12 @@
-    if (player_collide_object(C_MAIN)){
+    var cx, cy, collide;
+	cx = camera_get_view_x(view_camera[view_current])+global.window_width/2;
+	cy = camera_get_view_y(view_camera[view_current])+global.window_height/2;
+	collide = point_in_rectangle(cx,cy,bbox_left,bbox_top,bbox_right,bbox_bottom);
+
+    if (collide){
         with (global.current_bg){
-            if ((obj_player.x_speed > 0 && other.horizontal) || (obj_player.y_speed > 0 && !other.horizontal))        instance_change(other.bg_RD, true);
-            else if ((obj_player.x_speed < 0 && other.horizontal) || (obj_player.y_speed < 0 && !other.horizontal))   instance_change(other.bg_LU, true);
+            if ((cx > x && other.horizontal) || (cy > 0 && !other.horizontal))        instance_change(other.bg_RD, true);
+            else if ((cx < 0 && other.horizontal) || (cy < 0 && !other.horizontal))   instance_change(other.bg_LU, true);
         }
     }
     if (!on_screen()) instance_deactivate_object(id);
