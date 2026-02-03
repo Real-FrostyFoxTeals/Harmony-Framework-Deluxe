@@ -26,6 +26,9 @@
 		//Store checkpoint ID so all checkpoints can be active during the start
 		ds_list_add(global.checkpoint, id);
 		
+		//Prioritize spawning the player at a checkpoint
+		global.checkpoint_special_priority = 0;
+		
 		//Play sound
 		play_sound(sfx_checkpoint);
 	}

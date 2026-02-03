@@ -1,2 +1,2 @@
-
-draw_animator(animator);
+/// @description Draw ring
+	draw_animator(animator);

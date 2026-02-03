@@ -93,6 +93,16 @@ function play_music_priority(music_id, channel)
 	play_music(music_id, channel);
 }
 
+function stop_music(channel = BGM)
+{
+	with(obj_music)
+	{
+		audio_stop_sound(playing[channel]);
+		playing[channel] = noone;
+		play_data[channel] = "";
+	}
+}
+
 function stop_jingle(fade_music_in, fade_speed = 1){
 
 	with(obj_music)
