@@ -41,7 +41,8 @@
 		if (time == time_until) {
 			var big_chance = irandom_range(0,3)
 			var bubble = instance_create_depth(x + irandom_range(-8,7), y-4, depth-1, bubble_obj);
-			
+			bubble.water_object = instance_nearest(x, y, obj_water_pool);
+            
 			if (cycle mod (emitting_type + 1) == 0){
 				if (big_chance == 3 && !spawned_big){
 					bubble.type = 2

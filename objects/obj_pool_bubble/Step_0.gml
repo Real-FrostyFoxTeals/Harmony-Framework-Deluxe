@@ -26,7 +26,7 @@
 			x_speed = 0;
 			y_speed = 0;
 			ground_speed = 0;
-			state = ST_NORMAL;
+			state = player_state_normal;
 			animation_play(animator, ANIM.BREATHE);
 			play_sound(sfx_breathe);
 		}
