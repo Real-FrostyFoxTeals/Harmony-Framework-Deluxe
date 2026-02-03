@@ -10,7 +10,7 @@
 	collision_flag = false;
 	
 	//Change flag
-	if(obj_player.y < y && obj_player.x >= water_object.x && obj_player.x < water_object.x + water_object.sprite_width && abs(obj_player.ground_speed) >= 4 && obj_player.ground && obj_player.y_speed >= 0 && obj_player.y_speed <= 1 && obj_player.mode = 0)
+	if(obj_player.y < y && abs(obj_player.ground_speed) >= 4 && obj_player.ground && obj_player.y_speed >= 0 && obj_player.y_speed <= 1 && obj_player.mode = 0)
 		collision_flag = true;
 	
 	if (global.water_running_effect == 1) {
