@@ -186,7 +186,7 @@ function player_collision(){
         //Ceiling solid collision
 		if(mode = 0)
 		{
-			if(line_check(hitbox_w, -hitbox_h) && line_check(-hitbox_w, -hitbox_h) && line_check(hitbox_w, hitbox_h) && line_check(-hitbox_w, hitbox_h))
+			if(point_check(hitbox_w, -8) && point_check(-hitbox_w, -8))
 			{
                 knockout_type = K_DIE;
 			}

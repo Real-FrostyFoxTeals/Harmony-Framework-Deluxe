@@ -101,10 +101,10 @@
     {"$GMFolder":"","%Name":"Animals","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Animals.yy","name":"Animals","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Bridge","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Bridge.yy","name":"Bridge","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Checkpoints","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Checkpoints.yy","name":"Checkpoints","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Editor","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Editor.yy","name":"Editor","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"End Stage","folderPath":"folders/Sprites/Stage Sprites/Common Objects/End Stage.yy","name":"End Stage","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Capsule","folderPath":"folders/Sprites/Stage Sprites/Common Objects/End Stage/Capsule.yy","name":"Capsule","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Signpost","folderPath":"folders/Sprites/Stage Sprites/Common Objects/End Stage/Signpost.yy","name":"Signpost","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Editor","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Editor.yy","name":"Editor","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Monitors","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Monitors.yy","name":"Monitors","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rings","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Rings.yy","name":"Rings","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Spikes","folderPath":"folders/Sprites/Stage Sprites/Common Objects/Spikes.yy","name":"Spikes","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -127,7 +127,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Harmony Framework Deluxe",
   "resources":[
