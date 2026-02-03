@@ -6,7 +6,7 @@
 	global.stage_timer = 0;
 	
 	//Position player to the checkpoint
-	if(global.checkpoint_id != noone && instance_exists(global.checkpoint_id))
+	if(global.checkpoint_id != noone && instance_exists(global.checkpoint_id) && global.checkpoint_special_priority == 0)
 	{
 		obj_player.x = global.checkpoint_id.x;
 		obj_player.y = global.checkpoint_id.bbox_bottom - obj_player.hitbox_h;
@@ -14,7 +14,27 @@
 		obj_camera.target_y = obj_player.y-16;
 		global.stage_timer = global.time_store;
         
-        if instance_exists(obj_bg_swapper){
+        if(instance_exists(obj_bg_swapper)){
+            with (global.current_bg) instance_change(global.background_store, true);
+        }
+	}
+	
+	//Position player to the special stage entrance
+	if(global.special_ring_x != 0 && global.special_ring_y != 0 && global.special_ring != noone && global.checkpoint_special_priority = 1) 
+	{
+		obj_player.x = global.special_ring_x;
+		obj_player.y = global.special_ring_y;
+		obj_camera.target_x = obj_player.x;
+		obj_camera.target_y = obj_player.y-16;
+		global.stage_timer = global.time_store;
+		if(global.bonus_return == true)
+		{
+			global.rings = global.bonus_rings;
+			obj_player.shield = global.bonus_shield;
+			global.bonus_return = false;
+		}
+		
+		if(instance_exists(obj_bg_swapper)){
             with (global.current_bg) instance_change(global.background_store, true);
         }
 	}

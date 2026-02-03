@@ -50,6 +50,11 @@
     global.current_bg = noone;
     global.background_store = noone;		//Store value for the background at the time of getting the checkpoint
 	
+	//Special stage ring values
+	global.special_ring = ds_list_create();	//The list of used special rings
+	global.special_ring_x = 0;
+	global.special_ring_y = 0;
+	
 	enum BONUSSTAGE {
 		OUTSIDE,
 		GOING_TO,
@@ -76,6 +81,9 @@
 	global.monitor_store = [];				//List of monitor instances that were bumped with sign
 	global.monitor_id = 0;					//Current list ID of bumped monitor
 	global.act_transition = false;			//Act transition trigger, this is active for a single frame when new act starts
+	
+	//Whether to prioritize spawning the player at the last checkpoint or special stage entrance
+	global.checkpoint_special_priority = 0;	//0: Checkpoint | 1: Special Ring
 	
 	//Extra life stuff
 	global.score_extralife = 50000;			//Score threshold for extra life
