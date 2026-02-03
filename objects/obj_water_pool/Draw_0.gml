@@ -1,4 +1,4 @@
-    anim_water += 0.7 / 4;
+    anim_water += 0.7;
 
     draw_set_color($FF031161);
 	gpu_set_blendmode(bm_subtract);
