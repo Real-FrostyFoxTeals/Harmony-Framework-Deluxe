@@ -1,6 +1,8 @@
 function player_water(){
 	//Stop executing if theres no water
     var water = instance_place(x, y, obj_water);
+    
+    //Hard setting the water object to the main one if it's in proximity of the Player
     with (obj_water){
         if (!pool && obj_player.y >= y-32){
             water = self;
@@ -147,6 +149,7 @@ function player_water(){
     		break;	
     	}
     }
+    //Check to make sure you can leave the pool from the sides
     else if (water.pool)
     {
         if(underwater) { 

@@ -21,6 +21,7 @@
 	function aaz2_water_dist_end(){
 		if(!instance_exists(obj_water)) exit;
 		
+        //Making sure the water object used isn't a pool
         var water;
         with (obj_water){
             if (!pool){ water = self; break; }
