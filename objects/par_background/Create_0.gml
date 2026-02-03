@@ -1,5 +1,4 @@
 /// @description Values
-	
 	background_sprite = [];
 	background_frame = [];
 	factor_x = [];
@@ -22,11 +21,16 @@
     background_blend_mode = [];
     background_animation_speed = [];
     visibility = [];
-    background_clip_base = [];
-    background_clip_layer = [];
-    background_clip_yscale = [];
 
-    clip_base_layer = 0;
+    clamp_base_layer = 0;
+    background_clamp_base = [];
+    background_clamped_layer = [];
+    background_clamp_yscale = [];
+
+    clip_start_layer = -1;
+    clip_end_layer = -1;
+    background_clip_start = [];
+    background_clip_end = [];
 
 	bg_id = 0;
     attribute_number = 0;
@@ -99,3 +103,5 @@
     set_slider      = true;
     dbg_bg_values   = NaN;
     set_debuger_values();
+
+    draw_color = c_white;

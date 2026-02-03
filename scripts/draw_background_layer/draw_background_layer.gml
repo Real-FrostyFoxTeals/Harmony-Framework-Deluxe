@@ -1,5 +1,30 @@
 function draw_background_layer(background_layer)
 {
+    //Apply blend mode to the background
+    switch (background_blend_mode[background_layer])
+    {
+        case "lighten":
+            gpu_set_blendmode_ext(bm_one, bm_dest_color);
+            gpu_set_blendequation_sepalpha(bm_eq_max, bm_eq_add);
+            gpu_set_alphatestenable(true);
+        break;
+        case "darken":
+            gpu_set_blendmode_ext(bm_one, bm_dest_color);
+            gpu_set_blendequation_sepalpha(bm_eq_min, bm_eq_add);
+            gpu_set_alphatestenable(true);
+        break;
+        case "addition":
+            gpu_set_blendmode(bm_add);
+        break;
+        case "multiply":
+            gpu_set_blendmode_ext(bm_zero, bm_src_color);
+            gpu_set_alphatestenable(true);
+        break;
+    }
+    
+    //Frame increase for animated backgrounds
+    if (background_animation_speed[background_layer] != 0) background_frame[background_layer] += background_animation_speed[background_layer];
+    
 	//Draw background
     if(line_scroll[background_layer] = false) 
     { 
@@ -34,10 +59,10 @@ function draw_background_layer(background_layer)
         //Draw the background if the visibility flag is on 
         if (visibility[background_layer] == true) 
         {
-            if (!background_clip_yscale[background_layer] && background_clip_layer[background_layer])
-                draw_sprite_tiled_horizontal_part(background_sprite[background_layer], background_frame[background_layer], -1, 0, 1, ((floor(pos_y[clip_base_layer])+sprite_get_height(background_sprite[clip_base_layer])*bg_scale[clip_base_layer]) - floor(pos_y[background_layer])), floor(pos_x[background_layer]), floor(pos_y[background_layer]), alpha[background_layer], background_clip_layer[background_layer]);
+            if (!background_clamp_yscale[background_layer] && background_clamped_layer[background_layer])
+                draw_sprite_tiled_horizontal_part(background_sprite[background_layer], background_frame[background_layer], -1, 0, 1, ((floor(pos_y[clamp_base_layer])+sprite_get_height(background_sprite[clamp_base_layer])*bg_scale[clamp_base_layer]) - floor(pos_y[background_layer])), floor(pos_x[background_layer]), floor(pos_y[background_layer]), draw_color, alpha[background_layer], background_clamped_layer[background_layer]);
             else
-                draw_sprite_tiled_horizontal(background_sprite[background_layer], background_frame[background_layer], floor(pos_x[background_layer]), floor(pos_y[background_layer]), background_vertical[background_layer], (background_clip_yscale[background_layer])?(((floor(pos_y[clip_base_layer])+sprite_get_height(background_sprite[clip_base_layer])*bg_scale[clip_base_layer]) - floor(pos_y[background_layer]))/sprite_get_height(background_sprite[background_layer])):1, alpha[background_layer]); 
+                draw_sprite_tiled_horizontal(background_sprite[background_layer], background_frame[background_layer], floor(pos_x[background_layer]), floor(pos_y[background_layer]), background_vertical[background_layer], (background_clamp_yscale[background_layer])?(((floor(pos_y[clamp_base_layer])+sprite_get_height(background_sprite[clamp_base_layer])*bg_scale[clamp_base_layer]) - floor(pos_y[background_layer]))/sprite_get_height(background_sprite[background_layer])):1, draw_color, alpha[background_layer]); 
         }
     }
     else 
@@ -96,7 +121,7 @@ function draw_background_layer(background_layer)
     		//Draw the background if visibility flag is on
     		if (visibility[background_layer] == true) 
     		{
-    			draw_sprite_ext(background_sprite[background_layer], background_frame[background_layer], camera_get_view_x(view_camera[view_current]), floor(pos_y[background_layer]) , 1, bg_scale[background_layer], 0, c_white, alpha[background_layer]);
+    			draw_sprite_ext(background_sprite[background_layer], background_frame[background_layer], camera_get_view_x(view_camera[view_current]), floor(pos_y[background_layer]) , 1, bg_scale[background_layer], 0, draw_color, alpha[background_layer]);
     		}
     	}
 }
