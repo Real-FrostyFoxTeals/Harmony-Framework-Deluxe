@@ -5,8 +5,10 @@
 
     if (collide){
         with (global.current_bg){
-            if ((cx > x && other.horizontal) || (cy > 0 && !other.horizontal)) attribute_number = other.switch_to_RD;
-            else if ((cx < 0 && other.horizontal) || (cy < 0 && !other.horizontal)) attribute_number = other.switch_to_LU;
+            if ((cx > x && other.activation_dir == "Right") ||
+                (cy > y && other.activation_dir == "Down")  ||
+                (cx < x && other.activation_dir == "Left")  ||
+                (cy < y && other.activation_dir == "Up"))   { attribute_number = other.new_attribute; } 
         }
     }
     if (!on_screen()) instance_deactivate_object(id);

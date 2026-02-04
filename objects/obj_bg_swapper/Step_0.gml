@@ -5,8 +5,10 @@
 
     if (collide){
         with (global.current_bg){
-            if ((cx > x && other.horizontal) || (cy > 0 && !other.horizontal))        instance_change(other.bg_RD, true);
-            else if ((cx < 0 && other.horizontal) || (cy < 0 && !other.horizontal))   instance_change(other.bg_LU, true);
+            if ((cx > x && other.activation_dir == "Right") ||
+                (cy > y && other.activation_dir == "Down")  ||
+                (cx < x && other.activation_dir == "Left")  ||
+                (cy < y && other.activation_dir == "Up"))   { instance_change(other.new_bg, true); } 
         }
     }
     if (!on_screen()) instance_deactivate_object(id);
