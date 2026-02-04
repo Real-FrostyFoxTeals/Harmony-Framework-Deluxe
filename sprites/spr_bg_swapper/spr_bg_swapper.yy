@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Editor",
-    "path":"folders/Sprites/Stage Sprites/Common Objects/Editor.yy",
+    "name":"Editor Sprites",
+    "path":"folders/Sprites/Editor Sprites.yy",
   },
   "preMultiplyAlpha":true,
   "resourceType":"GMSprite",

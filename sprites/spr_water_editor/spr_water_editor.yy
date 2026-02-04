@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_water_pool",
+  "%Name":"spr_water_editor",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"1d405657-d6f0-49ab-a2df-47a07faf7573","blendMode":0,"displayName":"default","isLocked":false,"name":"1d405657-d6f0-49ab-a2df-47a07faf7573","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_water_pool",
+  "name":"spr_water_editor",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":3,
@@ -44,15 +44,15 @@
   },
   "origin":0,
   "parent":{
-    "name":"Editor",
-    "path":"folders/Sprites/Stage Sprites/Common Objects/Editor.yy",
+    "name":"Editor Sprites",
+    "path":"folders/Sprites/Editor Sprites.yy",
   },
   "preMultiplyAlpha":true,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_water_pool",
+    "%Name":"spr_water_editor",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_water_pool",
+    "name":"spr_water_editor",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -88,7 +88,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"184e6f43-44e6-4aa9-830d-d58e35e6e6f8","path":"sprites/spr_water_pool/spr_water_pool.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"184e6f43-44e6-4aa9-830d-d58e35e6e6f8","path":"sprites/spr_water_editor/spr_water_editor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2d65ff05-01ca-4ef2-b86a-8eb86857db02","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

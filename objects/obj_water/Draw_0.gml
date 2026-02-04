@@ -11,7 +11,7 @@
 	draw_set_color($5b301e);
 	gpu_set_blendmode(bm_subtract);
 
-	if (!pool)  draw_rectangle(cx, max(y+1, cy), cx+sw+64, max(y+1, cy)+sh, false);
+	if (!is_pool)  draw_rectangle(cx, max(y+1, cy), cx+sw+64, max(y+1, cy)+sh, false);
     else        draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
     
 	gpu_set_blendmode(bm_normal);
@@ -44,5 +44,5 @@
 	//Draw the water horizon
     image_index += 0.7;
 
-	if (!pool) draw_sprite_ext(spr_water, image_index, x, y, sw+64, 1, 0, c_white, 1);
+	if (!is_pool) draw_sprite_ext(spr_water, image_index, x, y, sw+64, 1, 0, c_white, 1);
     draw_sprite_ext(spr_water, image_index, x, y, sprite_width/64, 1, 0, c_white, 1);

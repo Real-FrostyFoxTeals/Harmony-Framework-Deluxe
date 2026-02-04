@@ -27,14 +27,15 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"pool","filters":[],"listItems":[],"multiselect":false,"name":"pool","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"is_pool","filters":[],"listItems":[],"multiselect":false,"name":"is_pool","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varDescription":"Makes it so the Water is a pool the size of the boundary box of the current instance of the object thats being inspected.","varFriendlyName":"Is Pool","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"water_id","filters":[],"listItems":[],"multiselect":false,"name":"water_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varDescription":"An ID to connect it to the Water Height Swapper object. You can leave it empty for simple use.","varFriendlyName":"Water ID","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_water_pool",
-    "path":"sprites/spr_water_pool/spr_water_pool.yy",
+    "name":"spr_water_editor",
+    "path":"sprites/spr_water_editor/spr_water_editor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

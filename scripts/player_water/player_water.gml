@@ -4,20 +4,20 @@ function player_water(){
     
     //Hard setting the water object to the main one if it's in proximity of the Player
     with (obj_water){
-        if (!pool && obj_player.y >= y-32){
+        if (!is_pool && obj_player.y >= y-32){
             water = self;
             break;
         }
     }
     
-	if(!instance_exists(water) || (water.pool && distance_to_object(water) > 20) || !collision_allow) exit;
+	if(!instance_exists(water) || (water.is_pool && distance_to_object(water) > 20) || !collision_allow) exit;
     
     //Boundary check if nearest water is a pool
-    if ((water.pool && x >= water.bbox_left && x <= water.bbox_right) || !water.pool)
+    if ((water.is_pool && x >= water.bbox_left && x <= water.bbox_right) || !water.is_pool)
     {
 	    //Entering water
-        var pool_condition = (water.pool && ((y >= water.y && y < water.bbox_bottom-sprite_height/2) || (y <= water.bbox_bottom && y > water.bbox_bottom-sprite_height/2)));
-    	if((!water.pool && y >= water.y) || pool_condition)
+        var pool_condition = (water.is_pool && ((y >= water.y && y < water.bbox_bottom-sprite_height/2) || (y <= water.bbox_bottom && y > water.bbox_bottom-sprite_height/2)));
+    	if((!water.is_pool && y >= water.y) || pool_condition)
     	{
     		//Player hitting the water
     		if(!underwater)
@@ -38,8 +38,8 @@ function player_water(){
     	}
     	
     	//Exiting water
-        pool_condition = (water.pool && ((y < water.y && y < water.bbox_bottom-sprite_height/2) || (y > water.bbox_bottom && y > water.bbox_bottom-sprite_height/2)));
-    	if((!water.pool && y < water.y) || pool_condition)
+        pool_condition = (water.is_pool && ((y < water.y && y < water.bbox_bottom-sprite_height/2) || (y > water.bbox_bottom && y > water.bbox_bottom-sprite_height/2)));
+    	if((!water.is_pool && y < water.y) || pool_condition)
     	{
     		//Player hitting the water
     		if(underwater)
@@ -150,7 +150,7 @@ function player_water(){
     	}
     }
     //Check to make sure you can leave the pool from the sides
-    else if (water.pool)
+    else if (water.is_pool)
     {
         if(underwater) { 
             y_speed *= 1.25; 

@@ -24,7 +24,7 @@
         //Making sure the water object used isn't a pool
         var water;
         with (obj_water){
-            if (!pool){ water = self; break; }
+            if (!is_pool){ water = self; break; }
         }
         
 		var c = view_camera[0];

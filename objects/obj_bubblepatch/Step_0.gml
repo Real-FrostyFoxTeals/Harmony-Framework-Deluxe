@@ -45,7 +45,7 @@
             bubble.water = instance_place(x, y, obj_water);
             //Hard setting the water object to the main one if it's in proximity of the Player
             with (obj_water){
-                if (!pool && obj_player.y >= y-32){
+                if (!is_pool && obj_player.y >= y-32){
                     bubble.water = self;
                     break;
                 }
