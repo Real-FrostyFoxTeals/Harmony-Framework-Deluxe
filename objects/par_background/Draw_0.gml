@@ -14,20 +14,23 @@
         }
         else if (clip_start_layer != -1 && clip_end_layer != -1){
             //Drawing the clip layers
-                var surfaceclip = surface_create(global.window_width * global.camera_zoom, global.window_height * global.camera_zoom);
-                var cx = camera_get_view_x(view_camera[view_current]);
-	            var cy = camera_get_view_y(view_camera[view_current])
+                var surfaceclip = surface_create(global.window_width * global.camera_zoom, room_height);
             
                 surface_set_target(surfaceclip);
             
+                draw_background_layer(clip_start_layer)
+                gpu_set_colourwriteenable(1,1,1,0);
+                
                 for (var i = clip_start_layer; i <= clip_end_layer; i++){
                 	draw_background_layer(i);
-                    gpu_set_colourwriteenable(1,1,1,0);
                 }
+                
                 gpu_set_colourwriteenable(1,1,1,1);
-            
+                
                 surface_reset_target();
-                draw_surface(surfaceclip, cx, cy);
+                var sprite = background_sprite[clip_start_layer];
+                var width = sprite_get_width(sprite);
+                draw_surface(surfaceclip, camera_get_view_x(view_camera[view_current])/width+global.window_width/width+2, 0);
             
             //Clean-up
                 surface_free(surfaceclip);
