@@ -30,7 +30,7 @@
                 surface_reset_target();
                 var sprite = background_sprite[clip_start_layer];
                 var width = sprite_get_width(sprite);
-                draw_surface(surfaceclip, camera_get_view_x(view_camera[view_current])/width+global.window_width/width+2, 0);
+                draw_surface(surfaceclip, 0, 0);
             
             //Clean-up
                 surface_free(surfaceclip);
