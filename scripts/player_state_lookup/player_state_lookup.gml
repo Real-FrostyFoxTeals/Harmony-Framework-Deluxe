@@ -6,6 +6,7 @@ function player_state_lookup(){
 		//Trigger peel out
 		if(press_action && ground && character == CHAR_SONIC)
 		{
+			audio_stop_sound(sfx_peelout_release);
 			play_sound(sfx_peelout_charge);
 			state = player_state_peelout
 			spindash_rev = 0;
