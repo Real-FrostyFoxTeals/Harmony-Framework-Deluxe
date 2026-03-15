@@ -1,4 +1,4 @@
-function play_sound(sound, loop = false){
+function play_sound(sound, loop = false, volume = 1.0){
 	//Stop the audio before playing so it doesn't overlay
 	audio_stop_sound(sound);
 	
@@ -6,5 +6,5 @@ function play_sound(sound, loop = false){
 	audio_play_sound(sound, 0, loop);
 	
 	//Change the volume to match the global volume
-	audio_sound_gain(sound, global.sfx_volume, -1);
+	audio_sound_gain(sound, volume * global.sfx_volume, -1);
 }
