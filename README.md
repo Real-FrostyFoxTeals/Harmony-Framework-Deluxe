@@ -1,7 +1,7 @@
 # Harmony Framework Deluxe
 
 # NOTICE!!
-This is a work in progress, and is (probably) being actively worked on. There might be bugs and unfinished things, so please be mindful of that.
+This is now obsolete as Harmony Framework 1.0 provides most of this fork's fixes and additions. There are still some exclusive things here that you can use, but beware a lot of things are unfinished and broken.
 
 # What is this?
   A fork of [Harmony Framework](https://github.com/DarkD04/Harmony-Framework/tree/dev_chopp_branch) made by the community that adds a bunch of extra stuff and improvements.
